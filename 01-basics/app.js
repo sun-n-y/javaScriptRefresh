@@ -1,5 +1,1 @@
-const btn = document.querySelector('.btn');
-
-btn.addEventListener('click', () => {
-  console.log('hi');
-});
+document.write('hello world');
