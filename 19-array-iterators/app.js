@@ -17,3 +17,10 @@ const ages = people.map(function (item) {
 });
 
 console.log(ages);
+
+//filter
+const youngPeople = people.filter(function (item) {
+  return item.age <= 30;
+});
+
+console.log(youngPeople);
