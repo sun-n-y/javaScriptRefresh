@@ -9,3 +9,11 @@ const people = [
 people.forEach(function (item) {
   console.log(item.age);
 });
+
+//map
+
+const ages = people.map(function (item) {
+  return item.age;
+});
+
+console.log(ages);
