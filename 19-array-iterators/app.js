@@ -24,3 +24,10 @@ const youngPeople = people.filter(function (item) {
 });
 
 console.log(youngPeople);
+
+//find
+console.log(
+  people.find(function (item) {
+    return item.name === 'kim';
+  })
+);
