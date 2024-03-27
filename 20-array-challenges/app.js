@@ -28,3 +28,15 @@ const averageScore =
   }, 0) / students.length;
 
 console.log(averageScore);
+
+const survey = students.reduce(function (survey, student) {
+  const favoriteSubject = student.favoriteSubject;
+  if (survey[favoriteSubject]) {
+    survey[favoriteSubject]++;
+  } else {
+    survey[favoriteSubject] = 1;
+  }
+  return survey;
+}, {});
+
+console.log(survey);
